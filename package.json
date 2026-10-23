@@ -1,0 +1,29 @@
+{
+  "name": "tanveer-ka-beta-newker",
+  "version": "1.0.0",
+  "description": "Tanveer Ka Beta Newker — Autonomous Security Research, Anti-Nuke Evaluation & Simulation Platform for Astra Astra (MADE BY TANVEER)",
+  "author": "MADE BY TANVEER",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning src/index.js",
+    "commands:register": "node --no-warnings=ExperimentalWarning src/commands/register.js",
+    "db:migrate": "node --no-warnings=ExperimentalWarning src/database/cli.js migrate",
+    "db:integrity": "node --no-warnings=ExperimentalWarning src/database/cli.js integrity",
+    "db:backup": "node --no-warnings=ExperimentalWarning src/database/cli.js backup",
+    "db:restore": "node --no-warnings=ExperimentalWarning src/database/cli.js restore",
+    "config:validate": "node --no-warnings=ExperimentalWarning src/config/cli.js",
+    "test": "node --no-warnings=ExperimentalWarning --test tests/unit/*.test.js tests/integration/*.test.js",
+    "test:unit": "node --no-warnings=ExperimentalWarning --test tests/unit/*.test.js",
+    "test:integration": "node --no-warnings=ExperimentalWarning --test tests/integration/*.test.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7"
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "header": "TANVEER KA BETA NEWKER — SECURITY OBSERVATION REPORT",
+  "creatorAttribution": "MADE BY TANVEER",
+  "observationId": "obs_mvle03nn_6603c83b28ce",
+  "serverName": "Astra Verification Lab",
+  "guildId": "777777777777777777",
+  "targetBotName": "Astra Astra",
+  "targetBotId": "998877665544332211",
+  "targetIdentificationState": "VERIFIED",
+  "observationStartTime": "2026-10-23T19:52:51.587Z",
+  "observationCompletionTime": "2026-10-23T19:52:51.815Z",
+  "overallStatus": "READY_FOR_APPROVAL",
+  "integrationStatus": "VERIFIED_WITH_TELEMETRY (STRUCTURED_JSON_LOG, IMPORTED_INCIDENT_REPORT, EXPORTED_DETECTION_HISTORY)",
+  "scenarioCounts": {
+    "selected": 38,
+    "passed": 23,
+    "failed": 15,
+    "partial": 0,
+    "blocked": 0,
+    "inconclusive": 0,
+    "cancelled": 0
+  },
+  "detectionMetrics": {
+    "scenarioPassRate": "60.53% (23/38)",
+    "scenarioFailureRate": "39.47% (15/38)",
+    "detectionRate": "28.57% (6/21)",
+    "missedDetectionRate": "71.43% (15/21)",
+    "falsePositiveRate": "0% (0/6)",
+    "precision": "100% (6/6)",
+    "recall": "28.57% (6/21)",
+    "detectionLatency": "median=14830077ms, p95=14831741ms, min=14829525ms, max=14831741ms (n=6, missing=15)",
+    "responseLatency": "median=137.5ms, p95=220ms, min=95ms, max=220ms (n=6, missing=15)",
+    "eventCollectionCompleteness": "100% (94/94)",
+    "duplicateAlertRate": "0% (0/6)",
+    "recoveryTime": "median=1ms, p95=N/A (requires n>=5, actual n=1), min=1ms, max=1ms (n=1, missing=0)",
+    "regressionRate": "UNAVAILABLE (No active regression baseline saved yet)"
+  },
+  "evidenceSourceBreakdown": {
+    "Live Discord observation": 1,
+    "Imported Astra Astra telemetry": 7,
+    "Simulated event": 38,
+    "Test-engine assertion": 38
+  },
+  "findings": [
+    {
+      "findingId": "fnd_mvle03tx_d770f3735d67",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "CRITICAL",
+      "confidence": "HIGH",
+      "scenarioId": "ED-002",
+      "title": "Confirmed Defensive Defect in Suspicious Role Creation and Deletion Patterns",
+      "affectedCapability": "Anti-Role-Wipe Detection",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Anti-Role-Wipe Detection correlation rules to detect Suspicious Role Creation and Deletion Patterns.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03pn_8458aeac7dc6",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03pn_7373671ba4e1",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_5d0f2f64b176",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "ED-007",
+      "title": "Confirmed Defensive Defect in Unusual Guild Configuration Changes",
+      "affectedCapability": "Guild Settings Integrity Protection",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Guild Settings Integrity Protection correlation rules to detect Unusual Guild Configuration Changes.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03q4_e10bc9183577",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03q4_fac70d0c6a67",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_5855dad84b93",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "IR-001",
+      "title": "Confirmed Defensive Defect in Detection-to-Alert Latency Evaluation",
+      "affectedCapability": "Incident Alerting Latency",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Optimize Astra Astra incident pipeline for Incident Alerting Latency (TARGET_DETECTION_CORRELATED).",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03qo_98af115f6ed0",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03qp_3fceddd2b29a",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_4b2a2aaf3ff2",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "IR-002",
+      "title": "Confirmed Defensive Defect in Detection-to-Response Mitigation Latency",
+      "affectedCapability": "Automated Mitigation Latency",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Optimize Astra Astra incident pipeline for Automated Mitigation Latency (TARGET_DETECTION_CORRELATED).",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03qp_eba8e9c89a8c",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03qp_42cc55219020",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_e25a9cac4f79",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "IR-003",
+      "title": "Confirmed Defensive Defect in Incident Evidence Retention Verification",
+      "affectedCapability": "Forensic Evidence Retention",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Optimize Astra Astra incident pipeline for Forensic Evidence Retention (TARGET_DETECTION_CORRELATED).",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03qq_eb5bc259763c",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03qq_134c8321a7d1",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_886990a8f2ce",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "IR-004",
+      "title": "Confirmed Defensive Defect in Incident Duplicate Alert Deduplication Control",
+      "affectedCapability": "Incident Alert Deduplication",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Optimize Astra Astra incident pipeline for Incident Alert Deduplication (TARGET_DETECTION_CORRELATED).",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03rj_278ec0d1a547",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03rj_d738d274ada7",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_79bf746df03c",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "IR-006",
+      "title": "Confirmed Defensive Defect in Post-Incident Recovery State Verification",
+      "affectedCapability": "Post-Incident Recovery",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Optimize Astra Astra incident pipeline for Post-Incident Recovery (TARGET_DETECTION_CORRELATED).",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03qt_1c160b7ac481",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03qt_3b73ba6c0e12",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_03c2864e3ac9",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-001",
+      "title": "Confirmed Defensive Defect in Rapid High-Frequency Event Bursts",
+      "affectedCapability": "Sliding-Window Burst Correlation",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Sliding-Window Burst Correlation correlation rules to detect Rapid High-Frequency Event Bursts.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03sa_0d18af9b4fde",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03sa_3569671e0e8e",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_6f2f575f0c7a",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-003",
+      "title": "Confirmed Defensive Defect in Out-of-Order Event Sequence Correlation",
+      "affectedCapability": "Out-of-Order Event Ordering",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Out-of-Order Event Ordering correlation rules to detect Out-of-Order Event Sequence Correlation.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03s2_c1e708eb0f34",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03s2_0b93a1186e35",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_e3ca3811a92a",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-004",
+      "title": "Confirmed Defensive Defect in Missing Intermediate Events Resilience",
+      "affectedCapability": "Partial Event Stream Correlation",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Partial Event Stream Correlation correlation rules to detect Missing Intermediate Events Resilience.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03s4_dd8bd3acb6e4",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03s4_9ab1820e7809",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_df25c9717ad7",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-005",
+      "title": "Confirmed Defensive Defect in Delayed Audit-Log Availability",
+      "affectedCapability": "Asynchronous Audit-Log Attribution",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Asynchronous Audit-Log Attribution correlation rules to detect Delayed Audit-Log Availability.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03t8_7f9e2d63224a",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03t8_39b61ba77876",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_2a86fc837df3",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-006",
+      "title": "Confirmed Defensive Defect in Delayed Target Detection Evaluation",
+      "affectedCapability": "Detection Latency Bound Enforcement",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Detection Latency Bound Enforcement correlation rules to detect Delayed Target Detection Evaluation.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03sg_52ab486e1e55",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03sg_bcd7ef890e0d",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_f9c60ffc15f7",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-007",
+      "title": "Confirmed Defensive Defect in Simultaneous Multi-Vector Suspicious Events",
+      "affectedCapability": "Cross-Vector Incident Correlation",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Cross-Vector Incident Correlation correlation rules to detect Simultaneous Multi-Vector Suspicious Events.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03sb_1277b8f6084c",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03sb_bda736d3c454",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_94d891052e12",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-008",
+      "title": "Confirmed Defensive Defect in Repeated Alerts and Alert-Storm Correlation",
+      "affectedCapability": "Alert Storm Coalescing",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Alert Storm Coalescing correlation rules to detect Repeated Alerts and Alert-Storm Correlation.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03t9_aba19c42989f",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03ta_e35a7a7ad254",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_128db7148853",
+      "classification": "CONFIRMED_DEFECT",
+      "severity": "HIGH",
+      "confidence": "HIGH",
+      "scenarioId": "TC-009",
+      "title": "Confirmed Defensive Defect in Events Separated by Configurable Intervals",
+      "affectedCapability": "Low-and-Slow Window Accumulation",
+      "observedBehavior": "TARGET_DETECTION_CORRELATED: 0 correlated target detection(s) despite active telemetry (Active Astra Astra telemetry stream did not contain a correlated detection within the evaluation window.)",
+      "recommendedFix": "Strengthen Astra Astra Low-and-Slow Window Accumulation correlation rules to detect Events Separated by Configurable Intervals.",
+      "verificationStatus": "OPEN",
+      "evidenceReferences": [
+        {
+          "evidenceId": "evd_mvle03tv_dd25c5c8bb7c",
+          "sourceType": "Simulated event",
+          "role": "SIMULATED_STIMULUS"
+        },
+        {
+          "evidenceId": "evd_mvle03tv_4c2bb0961927",
+          "sourceType": "Test-engine assertion",
+          "role": "ENGINE_ASSERTION"
+        }
+      ]
+    }
+  ],
+  "criticalLimitations": [],
+  "recommendedFixes": [
+    {
+      "findingId": "fnd_mvle03tx_d770f3735d67",
+      "scenarioId": "ED-002",
+      "whatShouldChange": "Strengthen Astra Astra Anti-Role-Wipe Detection correlation rules to detect Suspicious Role Creation and Deletion Patterns.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (ED-002) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun ED-002 + regression suite via /observe.",
+      "rerunScenarios": [
+        "ED-002",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_5d0f2f64b176",
+      "scenarioId": "ED-007",
+      "whatShouldChange": "Strengthen Astra Astra Guild Settings Integrity Protection correlation rules to detect Unusual Guild Configuration Changes.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (ED-007) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun ED-007 + regression suite via /observe.",
+      "rerunScenarios": [
+        "ED-007",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_5855dad84b93",
+      "scenarioId": "IR-001",
+      "whatShouldChange": "Optimize Astra Astra incident pipeline for Incident Alerting Latency (TARGET_DETECTION_CORRELATED).",
+      "whyItMatters": "Fast, deduplicated, and honest incident reporting is essential to contain high-velocity anti-nuke events.",
+      "howToVerify": "Execute /lab-replay for IR-001 and verify assertion compliance.",
+      "rerunScenarios": [
+        "IR-001",
+        "TC-008"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_4b2a2aaf3ff2",
+      "scenarioId": "IR-002",
+      "whatShouldChange": "Optimize Astra Astra incident pipeline for Automated Mitigation Latency (TARGET_DETECTION_CORRELATED).",
+      "whyItMatters": "Fast, deduplicated, and honest incident reporting is essential to contain high-velocity anti-nuke events.",
+      "howToVerify": "Execute /lab-replay for IR-002 and verify assertion compliance.",
+      "rerunScenarios": [
+        "IR-002",
+        "TC-008"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_e25a9cac4f79",
+      "scenarioId": "IR-003",
+      "whatShouldChange": "Optimize Astra Astra incident pipeline for Forensic Evidence Retention (TARGET_DETECTION_CORRELATED).",
+      "whyItMatters": "Fast, deduplicated, and honest incident reporting is essential to contain high-velocity anti-nuke events.",
+      "howToVerify": "Execute /lab-replay for IR-003 and verify assertion compliance.",
+      "rerunScenarios": [
+        "IR-003",
+        "TC-008"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_886990a8f2ce",
+      "scenarioId": "IR-004",
+      "whatShouldChange": "Optimize Astra Astra incident pipeline for Incident Alert Deduplication (TARGET_DETECTION_CORRELATED).",
+      "whyItMatters": "Fast, deduplicated, and honest incident reporting is essential to contain high-velocity anti-nuke events.",
+      "howToVerify": "Execute /lab-replay for IR-004 and verify assertion compliance.",
+      "rerunScenarios": [
+        "IR-004",
+        "TC-008"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_79bf746df03c",
+      "scenarioId": "IR-006",
+      "whatShouldChange": "Optimize Astra Astra incident pipeline for Post-Incident Recovery (TARGET_DETECTION_CORRELATED).",
+      "whyItMatters": "Fast, deduplicated, and honest incident reporting is essential to contain high-velocity anti-nuke events.",
+      "howToVerify": "Execute /lab-replay for IR-006 and verify assertion compliance.",
+      "rerunScenarios": [
+        "IR-006",
+        "TC-008"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_03c2864e3ac9",
+      "scenarioId": "TC-001",
+      "whatShouldChange": "Strengthen Astra Astra Sliding-Window Burst Correlation correlation rules to detect Rapid High-Frequency Event Bursts.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-001) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-001 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-001",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_6f2f575f0c7a",
+      "scenarioId": "TC-003",
+      "whatShouldChange": "Strengthen Astra Astra Out-of-Order Event Ordering correlation rules to detect Out-of-Order Event Sequence Correlation.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-003) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-003 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-003",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_e3ca3811a92a",
+      "scenarioId": "TC-004",
+      "whatShouldChange": "Strengthen Astra Astra Partial Event Stream Correlation correlation rules to detect Missing Intermediate Events Resilience.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-004) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-004 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-004",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03ty_df25c9717ad7",
+      "scenarioId": "TC-005",
+      "whatShouldChange": "Strengthen Astra Astra Asynchronous Audit-Log Attribution correlation rules to detect Delayed Audit-Log Availability.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-005) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-005 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-005",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_2a86fc837df3",
+      "scenarioId": "TC-006",
+      "whatShouldChange": "Strengthen Astra Astra Detection Latency Bound Enforcement correlation rules to detect Delayed Target Detection Evaluation.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-006) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-006 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-006",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_f9c60ffc15f7",
+      "scenarioId": "TC-007",
+      "whatShouldChange": "Strengthen Astra Astra Cross-Vector Incident Correlation correlation rules to detect Simultaneous Multi-Vector Suspicious Events.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-007) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-007 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-007",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_94d891052e12",
+      "scenarioId": "TC-008",
+      "whatShouldChange": "Strengthen Astra Astra Alert Storm Coalescing correlation rules to detect Repeated Alerts and Alert-Storm Correlation.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-008) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-008 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-008",
+        "FPR-001",
+        "FPR-006"
+      ]
+    },
+    {
+      "findingId": "fnd_mvle03tz_128db7148853",
+      "scenarioId": "TC-009",
+      "whatShouldChange": "Strengthen Astra Astra Low-and-Slow Window Accumulation correlation rules to detect Events Separated by Configurable Intervals.",
+      "whyItMatters": "Active telemetry confirmed simulated stimulus (TC-009) was not detected within the expected correlation window.",
+      "howToVerify": "Import updated Astra Astra telemetry or connect webhook and rerun TC-009 + regression suite via /observe.",
+      "rerunScenarios": [
+        "TC-009",
+        "FPR-001",
+        "FPR-006"
+      ]
+    }
+  ],
+  "controlledTestApproval": {
+    "assessmentState": "READY_FOR_APPROVAL",
+    "eligible": true,
+    "summary": "Execute 38 bounded, non-destructive controlled security verification scenario(s) (ED-001, ED-002, ED-003, ED-004, ED-005, ED-006, ...) in guild 777777777777777777 against verified target Astra Astra (998877665544332211) with max concurrency 3, max duration 15m, automatic cleanup verification, and instant /stop cancellation.",
+    "failedSafeguards": [],
+    "reasons": []
+  },
+  "cleanupSummary": {
+    "totalRecords": 38,
+    "incompleteRecords": 0
+  }
+}
