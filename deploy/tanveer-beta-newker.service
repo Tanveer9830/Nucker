@@ -1,0 +1,24 @@
+[Unit]
+Description=Tanveer Ka Beta Newker — Autonomous Security Research & Anti-Nuke Evaluation Platform (MADE BY TANVEER)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=__SERVICE_USER__
+WorkingDirectory=__WORKING_DIR__
+EnvironmentFile=__WORKING_DIR__/.env
+ExecStart=__NODE_BIN__ --no-warnings=ExperimentalWarning __WORKING_DIR__/src/index.js
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=15
+
+# Security Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=__WORKING_DIR__/data
+
+[Install]
+WantedBy=multi-user.target

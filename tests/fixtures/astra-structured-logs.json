@@ -1,0 +1,50 @@
+[
+  {
+    "id": "astra_log_001",
+    "botId": "998877665544332211",
+    "version": "2.4.1",
+    "kind": "ANTI_NUKE_ALERT",
+    "alertType": "CHANNEL_NUKE_DETECTED",
+    "scenarioId": "ED-001",
+    "triggerEventType": "CHANNEL_DELETE",
+    "action": "QUARANTINE_EXECUTOR",
+    "timestamp": "2026-10-24T00:00:01.120Z",
+    "responseLatencyMs": 180,
+    "actionSucceeded": true,
+    "evidenceRetained": true,
+    "recovered": true,
+    "summary": "Detected rapid channel create/delete sequence and revoked permissions"
+  },
+  {
+    "id": "astra_log_002",
+    "botId": "998877665544332211",
+    "version": "2.4.1",
+    "kind": "ANTI_NUKE_ALERT",
+    "alertType": "MASS_BAN_DETECTED",
+    "scenarioId": "ED-004",
+    "triggerEventType": "MEMBER_BAN_ADD",
+    "action": "STRIP_ADMIN_ROLES",
+    "timestamp": "2026-10-24T00:00:01.250Z",
+    "responseLatencyMs": 220,
+    "actionSucceeded": true,
+    "evidenceRetained": true,
+    "recovered": true,
+    "summary": "Contained simulated mass-ban burst"
+  },
+  {
+    "id": "astra_log_003",
+    "botId": "998877665544332211",
+    "version": "2.4.1",
+    "kind": "INCIDENT_MITIGATION",
+    "alertType": "HIERARCHY_MITIGATION_FAILURE",
+    "scenarioId": "IR-005",
+    "triggerEventType": "IR_HIERARCHY_BLOCKED_MITIGATION_PROBE",
+    "action": "ATTEMPT_ROLE_STRIP",
+    "timestamp": "2026-10-24T00:00:01.400Z",
+    "responseLatencyMs": 95,
+    "actionSucceeded": false,
+    "evidenceRetained": true,
+    "recovered": false,
+    "summary": "Detected higher-role actor; mitigation blocked by Discord role hierarchy (HTTP 403)"
+  }
+]

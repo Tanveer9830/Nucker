@@ -1,0 +1,20 @@
+{
+  "incidents": [
+    {
+      "id": "inc_001",
+      "botId": "998877665544332211",
+      "version": "2.4.1",
+      "kind": "INCIDENT_REPORT",
+      "alertType": "PERMISSION_ESCALATION_BLOCKED",
+      "scenarioId": "ED-003",
+      "triggerEventType": "ROLE_PERMISSION_ESCALATION",
+      "action": "REVERT_ROLE_PERMISSIONS",
+      "timestamp": "2026-10-24T00:00:02.050Z",
+      "responseLatencyMs": 145,
+      "actionSucceeded": true,
+      "evidenceRetained": true,
+      "recovered": true,
+      "summary": "Reverted unauthorized Administrator grant on role"
+    }
+  ]
+}
